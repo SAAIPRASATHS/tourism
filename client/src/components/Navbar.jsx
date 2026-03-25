@@ -1,5 +1,6 @@
 import React from 'react';
-import { MapPin, Search, Menu } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+import { MapPin, Search, Menu, Map } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = ({ tripCount = 0, onOpenTrip, onToggleSidebar }) => {
@@ -11,21 +12,26 @@ const Navbar = ({ tripCount = 0, onOpenTrip, onToggleSidebar }) => {
                         <Menu size={24} />
                     </button>
                     <div className="logo">
-                        <motion.div
-                            whileHover={{ rotate: 10 }}
-                            className="logo-icon"
-                        >
-                            <MapPin size={28} />
-                        </motion.div>
-                        <span className="brand-name">
-                            Tre<span className="highlight">go</span>
-                        </span>
+                        <NavLink to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+                            <motion.div
+                                whileHover={{ rotate: 10 }}
+                                className="logo-icon"
+                            >
+                                <MapPin size={28} />
+                            </motion.div>
+                            <span className="brand-name">
+                                Tre<span className="highlight">go</span>
+                            </span>
+                        </NavLink>
                     </div>
 
                     <div className="nav-links">
-                        <a href="#" className="nav-link">Home</a>
-                        <a href="#map" className="nav-link">Explore Map</a>
-                        <a href="#places" className="nav-link">Places</a>
+                        <NavLink to="/" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
+                        <NavLink to="/trip-planner" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                <Map size={16} /> Trip Planner
+                            </div>
+                        </NavLink>
                     </div>
 
                     <div className="nav-actions">

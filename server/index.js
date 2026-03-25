@@ -4,6 +4,7 @@ const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 const Groq = require('groq-sdk');
+const axios = require('axios');
 
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY,
@@ -42,6 +43,95 @@ app.get('/api/states/:id', (req, res) => {
         res.json(state);
     } else {
         res.status(404).json({ message: 'State not found' });
+    }
+});
+
+// Weather API Proxy
+app.get('/api/weather/:id', async (req, res) => {
+    const statesData = getStatesData();
+    const state = statesData.find(s => s.id === req.params.id);
+    
+    if (!state || !state.lat || !state.lng) {
+        return res.status(404).json({ message: 'State or coordinates not found' });
+    }
+
+    const apiKey = process.env.OPENWEATHER_API_KEY;
+    if (!apiKey || apiKey === 'your_openweathermap_api_key_here') {
+        return res.status(503).json({ message: 'Weather service not configured' });
+    }
+
+    try {
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather`, {
+            params: {
+                lat: state.lat,
+                lon: state.lng,
+                appid: apiKey,
+                units: 'metric'
+            }
+        });
+
+        const data = response.data;
+        res.json({
+            temp: Math.round(data.main.temp),
+            condition: data.weather[0].main,
+            description: data.weather[0].description,
+            humidity: data.main.humidity,
+            wind: Math.round(data.wind.speed * 3.6), // Convert m/s to km/h
+            icon: data.weather[0].icon,
+            location: state.capital || state.name
+        });
+    } catch (error) {
+        console.error("Weather API Error:", error.message);
+        res.status(500).json({ message: 'Failed to fetch weather data' });
+    }
+});
+
+// Pollen API Proxy (Google)
+app.get('/api/pollen/:id', async (req, res) => {
+    const statesData = getStatesData();
+    const state = statesData.find(s => s.id === req.params.id);
+    
+    if (!state || !state.lat || !state.lng) {
+        return res.status(404).json({ message: 'State or coordinates not found' });
+    }
+
+    const apiKey = process.env.GOOGLE_POLLEN_API_KEY;
+    if (!apiKey || apiKey === 'your_google_pollen_api_key_here') {
+        return res.status(503).json({ message: 'Pollen service not configured' });
+    }
+
+    try {
+        const response = await axios.get(`https://pollen.googleapis.com/v1/forecast:lookup`, {
+            params: {
+                'location.latitude': state.lat,
+                'location.longitude': state.lng,
+                days: 1,
+                key: apiKey
+            }
+        });
+
+        const dailyInfo = response.data.dailyInfo?.[0];
+        if (!dailyInfo) {
+            return res.json({ message: 'No pollen data available for this location' });
+        }
+
+        // Map pollen types
+        const pollenTypes = {};
+        dailyInfo.pollenTypeInfo?.forEach(info => {
+            pollenTypes[info.displayName.toLowerCase()] = {
+                index: info.indexInfo?.value || 0,
+                category: info.indexInfo?.category || 'None'
+            };
+        });
+
+        res.json({
+            pollenTypes,
+            recommendations: dailyInfo.healthRecommendations || [],
+            date: dailyInfo.date
+        });
+    } catch (error) {
+        console.error("Pollen API Error:", error.message);
+        res.status(500).json({ message: 'Failed to fetch pollen data' });
     }
 });
 

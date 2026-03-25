@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PlaceCard from './PlaceCard';
 import WeatherWidget from './WeatherWidget';
+import PollenWidget from './PollenWidget';
 import { X } from 'lucide-react';
 
 const StateDetail = ({ stateName, onClose, onAddToTrip, tripPlaces, favorites = [], onToggleFavorite }) => {
@@ -61,10 +62,17 @@ const StateDetail = ({ stateName, onClose, onAddToTrip, tripPlaces, favorites = 
                     </button>
                 </div>
 
-                {/* Weather Widget */}
+                {/* Monitoring Widgets (Weather & Pollen) */}
                 {!loading && stateData && (
-                    <div style={{ marginBottom: '1.5rem' }}>
-                        <WeatherWidget location={stateName} />
+                    <div className="monitoring-grid" style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                        gap: '1.5rem',
+                        marginBottom: '2rem',
+                        alignItems: 'start'
+                    }}>
+                        <WeatherWidget stateId={stateData.id} />
+                        <PollenWidget stateId={stateData.id} />
                     </div>
                 )}
 

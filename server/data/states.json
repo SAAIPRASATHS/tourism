@@ -138,7 +138,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Port Blair",
+        "lat": 11.6234,
+        "lng": 92.7265
     },
     {
         "id": "andhra-pradesh",
@@ -280,7 +283,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Amaravati",
+        "lat": 16.5062,
+        "lng": 80.648
     },
     {
         "id": "arunachal-pradesh",
@@ -418,7 +424,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Itanagar",
+        "lat": 27.0844,
+        "lng": 93.6053
     },
     {
         "id": "assam",
@@ -560,7 +569,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Dispur",
+        "lat": 26.1433,
+        "lng": 91.7898
     },
     {
         "id": "bihar",
@@ -698,7 +710,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Patna",
+        "lat": 25.6093,
+        "lng": 85.1376
     },
     {
         "id": "chandigarh",
@@ -837,7 +852,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Chandigarh",
+        "lat": 30.7333,
+        "lng": 76.7794
     },
     {
         "id": "chhattisgarh",
@@ -982,7 +1000,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Raipur",
+        "lat": 21.2514,
+        "lng": 81.6296
     },
     {
         "id": "dadara-nagar-havelli",
@@ -1124,7 +1145,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Silvassa",
+        "lat": 20.2766,
+        "lng": 73.0169
     },
     {
         "id": "daman-diu",
@@ -1269,7 +1293,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Daman",
+        "lat": 20.3974,
+        "lng": 72.8328
     },
     {
         "id": "delhi",
@@ -1409,7 +1436,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "New Delhi",
+        "lat": 28.6139,
+        "lng": 77.209
     },
     {
         "id": "goa",
@@ -1553,7 +1583,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Panaji",
+        "lat": 15.4909,
+        "lng": 73.8278
     },
     {
         "id": "gujarat",
@@ -1695,7 +1728,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Gandhinagar",
+        "lat": 23.2156,
+        "lng": 72.6369
     },
     {
         "id": "haryana",
@@ -1837,7 +1873,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Chandigarh",
+        "lat": 30.7333,
+        "lng": 76.7794
     },
     {
         "id": "himachal-pradesh",
@@ -1974,7 +2013,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Shimla",
+        "lat": 31.1048,
+        "lng": 77.1734
     },
     {
         "id": "jammu-kashmir",
@@ -2113,7 +2155,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Srinagar",
+        "lat": 34.0837,
+        "lng": 74.7973
     },
     {
         "id": "jharkhand",
@@ -2258,7 +2303,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Ranchi",
+        "lat": 23.3441,
+        "lng": 85.3096
     },
     {
         "id": "karnataka",
@@ -2398,7 +2446,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Bengaluru",
+        "lat": 12.9716,
+        "lng": 77.5946
     },
     {
         "id": "kerala",
@@ -2538,7 +2589,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Thiruvananthapuram",
+        "lat": 8.5241,
+        "lng": 76.9366
     },
     {
         "id": "lakshadweep",
@@ -2676,7 +2730,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Kavaratti",
+        "lat": 10.5593,
+        "lng": 72.6358
     },
     {
         "id": "madhya-pradesh",
@@ -2817,7 +2874,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Bhopal",
+        "lat": 23.2599,
+        "lng": 77.4126
     },
     {
         "id": "maharashtra",
@@ -2955,7 +3015,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Mumbai",
+        "lat": 19.076,
+        "lng": 72.8777
     },
     {
         "id": "manipur",
@@ -3095,7 +3158,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Imphal",
+        "lat": 24.817,
+        "lng": 93.9368
     },
     {
         "id": "meghalaya",
@@ -3236,7 +3302,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Shillong",
+        "lat": 25.5788,
+        "lng": 91.8933
     },
     {
         "id": "mizoram",
@@ -3378,7 +3447,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Aizawl",
+        "lat": 23.7271,
+        "lng": 92.7176
     },
     {
         "id": "nagaland",
@@ -3515,7 +3587,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Kohima",
+        "lat": 25.6751,
+        "lng": 94.1086
     },
     {
         "id": "odisha",
@@ -3660,7 +3735,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Bhubaneswar",
+        "lat": 20.2961,
+        "lng": 85.8245
     },
     {
         "id": "puducherry",
@@ -3802,7 +3880,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Puducherry",
+        "lat": 11.9416,
+        "lng": 79.8083
     },
     {
         "id": "punjab",
@@ -3941,7 +4022,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Chandigarh",
+        "lat": 30.7333,
+        "lng": 76.7794
     },
     {
         "id": "rajasthan",
@@ -4085,7 +4169,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Jaipur",
+        "lat": 26.9124,
+        "lng": 75.7873
     },
     {
         "id": "sikkim",
@@ -4224,7 +4311,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Gangtok",
+        "lat": 27.3389,
+        "lng": 88.6065
     },
     {
         "id": "tamil-nadu",
@@ -4365,7 +4455,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Chennai",
+        "lat": 13.0827,
+        "lng": 80.2707
     },
     {
         "id": "telangana",
@@ -4508,7 +4601,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Hyderabad",
+        "lat": 17.385,
+        "lng": 78.4867
     },
     {
         "id": "tripura",
@@ -4652,7 +4748,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Agartala",
+        "lat": 23.8315,
+        "lng": 91.2868
     },
     {
         "id": "uttar-pradesh",
@@ -4791,7 +4890,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Lucknow",
+        "lat": 26.8467,
+        "lng": 80.9462
     },
     {
         "id": "uttarakhand",
@@ -4933,7 +5035,10 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Dehradun",
+        "lat": 30.3165,
+        "lng": 78.0322
     },
     {
         "id": "west-bengal",
@@ -5075,6 +5180,9 @@
                 "bestTime": "October to March",
                 "transport": "Bus, Taxi, Auto"
             }
-        ]
+        ],
+        "capital": "Kolkata",
+        "lat": 22.5726,
+        "lng": 88.3639
     }
 ]
